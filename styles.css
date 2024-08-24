@@ -1,10 +1,9 @@
-/* General Styles */
+/* General styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f4f4f4;
 }
 
 header {
@@ -33,61 +32,54 @@ nav ul li a {
 section {
   padding: 2rem;
   margin: 1rem 0;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.project-grid {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+section h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.project-card {
-  background-color: #e0e0e0;
+img {
+  max-width: 150px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.project {
+  background-color: #f9f9f9;
   padding: 1rem;
-  border-radius: 8px;
-  flex: 1;
-  min-width: 250px;
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+}
+
+footer {
+  background-color: #333;
+  color: white;
   text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-.skills-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.skills-list li {
-  background-color: #e0e0e0;
-  padding: 0.5rem;
-  margin-bottom: 0.5rem;
-  border-radius: 5px;
-}
-
-.blog-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.blog-list li {
-  margin-bottom: 0.5rem;
-}
-
+/* Contact Form Styles */
 form {
   display: flex;
   flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 form label {
-  margin: 0.5rem 0 0.2rem;
+  margin: 0.5rem 0;
 }
 
 form input, form textarea {
   padding: 0.5rem;
   margin-bottom: 1rem;
-  border-radius: 4px;
   border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 form button {
@@ -96,17 +88,26 @@ form button {
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 form button:hover {
   background-color: #555;
 }
 
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+/* Responsive design */
+@media (max-width: 600px) {
+  nav ul {
+      text-align: center;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+
+  form {
+      width: 90%;
+      margin: 0 auto;
+  }
 }
